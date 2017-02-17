@@ -1,0 +1,27 @@
+body 
+{
+  font-family: sans-serif;
+  background-color: #0014f5;
+  background: url("background.jpg") no-repeat;
+}
+
+h3
+{
+	color: white;
+}
+
+h1
+{
+	color: rgb(214, 66, 47);
+}
+
+.main_banner
+{
+	text-align: center;
+
+}
+
+#list
+{
+	color: white;
+}
