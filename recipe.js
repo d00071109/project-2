@@ -14,7 +14,6 @@ request_g.onreadystatechange = function ()
 				messages = JSON.parse(request_g.responseText);
 				
 				var recipe = document.getElementById('list');
-				//newListItem.innerHTML = "";
 
 				for (var i = 0; i < messages.length; i++)
 				{
@@ -64,7 +63,7 @@ ingButton.onclick = function()
 	console.log("button was clicked");
 	var recipeInput = document.getElementById("ingredients");
 	var recipe = recipeInput.value;
-	var data = 'ingredients=' + encodeURIComponent(recipe);
+	var data = "ingredients=" + encodeURIComponent(recipe);
 	request_p.open('POST', 'http://localhost:8080/recipes');
 	request_p.send(data);
 	
